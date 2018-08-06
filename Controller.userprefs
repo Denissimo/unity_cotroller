@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\MyController.cs">
     <Files>
       <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\MyController.cs" Line="96" Column="3" />
+      <File FileName="Assets\Script\MyController.cs" Line="129" Column="36" />
       <File FileName="..\Import\Assets\Script\Portal.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

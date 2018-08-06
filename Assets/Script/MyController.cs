@@ -11,34 +11,38 @@ public class MyController : MonoBehaviour {
 	public Hashtable AnimateKeys = new Hashtable();
 	public Hashtable Forces = new Hashtable();
 	public Hashtable Movements = new Hashtable();
+
 	public GameObject player;
 	public GameObject sphere;
 	public GameObject camera;
 	public GameObject cameraBox;
+
 	public Rigidbody RigidBody;
 	public float koefForce;
 	public float koefMove;
 	public Vector3 MovementSumm;
 	public bool isMove;
-	public Vector3 MousePos;
 
 	public float MouseSpeedX = 4.0f;
 	public float MouseSpeedY = 4.0f;
 	public GameObject testOb;
 
-	private float RotationSpeedY = 3.0f;
+	//private float velocity;
+
+	private float rotationSpeedY = 10.0f;
 	private int signRotationY;
-	private Vector3 bodyCenter;
+	private Vector3 bodyCenterPos;
 	private Quaternion cameraRotation;
 	private float distanceBodyCamera = 3.0f;
 
 	//private float cameraRotY = 0.1f;
 	//private float cameraRotX = 0.1f;
 	private float mouseSence = 0.05f;
+	private bool isGroundContact;
 
 	// Use this for initialization
-	void Start () {
-		Debug.Log (Vector3.up);
+	private void Start () {
+
 		//testOb = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
         // Rigidbody.ClosestPointOnBounds();
@@ -79,39 +83,23 @@ public class MyController : MonoBehaviour {
 
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	private void FixedUpdate () {
 
-		//camera.transform.Translate(new Vector3(0, 1, 0));
-		MousePos = Input.mousePosition;
-		bodyCenter = transform.TransformPoint (0, 1, 0);
-		cameraBox.transform.position = bodyCenter;
-
-		//camera.transform.RotateAround(bodyCenter, Vector3.up, Input.GetAxis("Mouse X") * MouseSpeedX);
-		cameraBox.transform.Rotate(0, Input.GetAxis("Mouse X") * MouseSpeedX, 0);
-		//camera.transform.RotateAround(bodyCenter, transform.rotation*Vector3.right, -Input.GetAxis("Mouse Y") * MouseSpeedY);
-		camera.transform.RotateAround(bodyCenter, camera.transform.rotation*Vector3.right, -Input.GetAxis("Mouse Y") * MouseSpeedY);
-		//transform.Rotate (0, RotationSpeedY * Math.Sign(Input.GetAxis("Mouse X")), 0);
-		//camera.transform.LookAt (bodyCenter);
+		bodyCenterPos = transform.TransformPoint (0, 1, 0);
+		MouseController(bodyCenterPos);
+		//transform.Rotate (0, rotationSpeedY * Math.Sign(Input.GetAxis("Mouse X")), 0);
+		//camera.transform.LookAt (bodyCenterPos);
 
 
 		/*
-		if (Vector3.Distance (camera.transform.position, bodyCenter) > distanceBodyCamera) {
-			camera.transform.position = Vector3.MoveTowards(camera.transform.position, bodyCenter, 1);
+		if (Vector3.Distance (camera.transform.position, bodyCenterPos) > distanceBodyCamera) {
+			camera.transform.position = Vector3.MoveTowards(camera.transform.position, bodyCenterPos, 1);
 		}
 		*/
 
 		foreach(DictionaryEntry item in AnimateKeys){
 			animator.SetBool ((string)item.Value, Input.GetButton((string)item.Key));
 		}
-
-		foreach(DictionaryEntry item in Forces){
-			if(Input.GetButton((string)item.Key)) {
-			    //Debug.Log ((Vector3)item.Value);
-				RigidBody.AddForce((Vector3)item.Value);
-			}
-		}
-
-
 
 		isMove = false;
 		MovementSumm = new Vector3(0, 0, 0);
@@ -128,30 +116,44 @@ public class MyController : MonoBehaviour {
         }
 		if (isMove) {
 			RigidBody.velocity = MovementSumm;
-			transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, camera.transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-			//transform.rotation = Quaternion.Euler (transform.rotation.x * 180, 90.0f, transform.rotation.z * 180);
-			//Debug.Log ("Camera: " + cameraBox.transform.rotation.y + " Player: " + transform.rotation.y);
-			//transform.rotation = camera.transform.rotation;
+			//transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, camera.transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+
+			transform.rotation = Quaternion.Lerp(transform.rotation,
+				new Quaternion(transform.rotation.x, cameraBox.transform.rotation.y, transform.rotation.z, cameraBox.transform.rotation.w),
+				Time.deltaTime * rotationSpeedY
+			);
+
 		}
 
-		Debug.Log (cameraBox.transform.rotation.eulerAngles.y);
+		//Debug.Log ("" + cameraBox.transform.rotation.eulerAngles.y/180 + " >> " + cameraBox.transform.rotation.y);
+		Debug.Log ((RigidBody.velocity - cameraBox.transform.forward).magnitude); //RigidBody.velocity - cameraDirection
 
-		//Debug.Log ("Camera: " + camera.transform.rotation.y + "Player: " + transform.rotation.y);
-		//camera.transform.position = bodyCenter + new Vector3(0.01f, 0.01f, 0.01f);
-
-		//if(camera.transform.rotation.x > -0.4f & camera.transform.rotation.x < 0.4f) {
-		//testOb.transform.position = bodyCenter + cameraRotation * new Vector3(0, 3, 0);
-
-		//Vector3 camRotX = bodyCenter * camera.transform.rotation;
-		//Debug.Log (camRotX);
-		//}
+		foreach(DictionaryEntry item in Forces){
+			if(Input.GetButton((string)item.Key)) {
+				//Debug.Log ((Vector3)item.Value);
+				RigidBody.AddForce((Vector3)item.Value, ForceMode.Impulse);
+			}
+		}
 
 		//Debug.Log (RigidBody.GetPointVelocity(sphere.transform.position));
 		//Debug.Log (Input.GetButton("Walk"));
 	}
 
+	private void MouseController(Vector3 bodyCenterPos) {
+		cameraBox.transform.position = bodyCenterPos;
+		cameraBox.transform.Rotate(0, Input.GetAxis("Mouse X") * MouseSpeedX, 0);
+		camera.transform.RotateAround(bodyCenterPos, camera.transform.rotation*Vector3.right, -Input.GetAxis("Mouse Y") * MouseSpeedY);
+	}
 
-	void OnGUI () {
+	private void OnTriggerEnter(Collider other)
+	{
+		//Debug.Log(other.gameObject.name);
+		//Debug.Log(other.gameObject.GetComponent<Renderer>().material);
+		Debug.Log(other.gameObject.GetComponent<Collider>().material.dynamicFriction);
+		Debug.Log(other.gameObject.GetComponent<Collider>().material.staticFriction);
+	}
+
+	private void OnGUI () {
 		// Make a label that uses the "box" GUIStyle.
 		GUI.Label (new Rect (0,0,200,100), "" + Screen.width + " " + Screen.height
 			+ " X: " + Input.GetAxis("Mouse X")
@@ -162,6 +164,6 @@ public class MyController : MonoBehaviour {
 		GUI.Label (new Rect (0,40,200,100), "" + transform.rotation.y, style);
 
 		// Make a button that uses the "toggle" GUIStyle
-		GUI.Button (new Rect (10,140,180,20), "This is a button", "toggle");
+		GUI.Button (new Rect (10,140,180,20), "" + RigidBody.velocity.magnitude, "toggle");
 	}
 }
