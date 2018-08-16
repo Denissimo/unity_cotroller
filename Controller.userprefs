@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\MyController.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\MyController.cs" Line="129" Column="36" />
       <File FileName="..\Import\Assets\Script\Portal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\MyController.cs" Line="75" Column="32" />
+      <File FileName="Assets\Script\FootSteps.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\FootBox.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

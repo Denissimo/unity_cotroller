@@ -13,11 +13,27 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/5b/5bc2bea205c35a449b5d2ef14858fe5f" afterPath="$PROJECT_DIR$/Library/metadata/5b/5bc2bea205c35a449b5d2ef14858fe5f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/bb/bb6b4101ad2c42ec99f064a70c354e3c" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb6b4101ad2c42ec99f064a70c354e3c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/123.unity" afterPath="$PROJECT_DIR$/Assets/123.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Horseman/Materials/Pistol_metal.mat" afterPath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Horseman/Materials/Pistol_metal.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Horseman/Materials/horse_armor_metal.mat" afterPath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Horseman/Materials/horse_armor_metal.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Weapon_and_Shield/Materials/Shield.mat" afterPath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Weapon_and_Shield/Materials/Shield.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Wisard's/Materials/W_Helmet.mat" afterPath="$PROJECT_DIR$/Assets/Animations/MEDIEVAL_ANIMATIONS_MEGA_PACK_new/Wisard's/Materials/W_Helmet.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-sheld_A.mat" afterPath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-sheld_A.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-shirt_A.mat" afterPath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-shirt_A.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-sword_A.mat" afterPath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-sword_A.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-vambracers_A.mat" afterPath="$PROJECT_DIR$/Assets/HERO/Materials/Hero-vambracers_A.mat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/MyController.controller" afterPath="$PROJECT_DIR$/Assets/MyController.controller" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Script/MyController.cs" afterPath="$PROJECT_DIR$/Assets/Script/MyController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Framework_v1/Content/Materials/Waypoint_02.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Framework_v1/Content/Materials/Waypoint_02.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Framework_v1/Content/Models/Rust_MW2/Materials/jean_blu.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Framework_v1/Content/Models/Rust_MW2/Materials/jean_blu.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedBlastDoorAFrame.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedBlastDoorAFrame.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedBlastDoorBFrame.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedBlastDoorBFrame.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedMetalGold.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedMetalGold.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedStrips.mat" afterPath="$PROJECT_DIR$/Assets/ootii/Unity/Labs/Materials/Shared/SharedStrips.mat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller.userprefs" afterPath="$PROJECT_DIR$/Controller.userprefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyController.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/MyController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="63" column="67" lean-forward="false" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
+            <state relative-caret-position="1338">
+              <caret line="138" column="30" lean-forward="false" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.php" pinned="false" current-in-tab="true">
+        <entry file="file://E:/YandexDisc/OSPanel/domains/kz/helpers/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -92,6 +118,7 @@
       <find>Movenets</find>
       <find>Vector3</find>
       <find>koefForce</find>
+      <find>new PDO</find>
     </findStrings>
     <replaceStrings>
       <replace>Forces</replace>
@@ -103,8 +130,9 @@
       <replace>koefForces</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>L:\UnityProjects\Controller</dir>
       <dir>L:\UnityProjects\Controller\Assets\Standard Assets</dir>
+      <dir>L:\UnityProjects\Controller</dir>
+      <dir>E:\YandexDisc\OSPanel\domains\kz</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -148,7 +176,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,11 +222,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/YandexDisc/OSPanel/domains/node01" />
+    <property name="last_opened_file_path" value="E:/YandexDisc/OSPanel/domains/kz" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,19 +326,22 @@
       <workItem from="1532772872952" duration="629000" />
       <workItem from="1532848861712" duration="5829000" />
       <workItem from="1532859372190" duration="1440000" />
+      <workItem from="1533585450527" duration="250000" />
+      <workItem from="1534248361384" duration="1103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13472000" />
+    <option name="totallyTimeSpent" value="14825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1678" height="1048" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26514214" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2713226" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -322,7 +353,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -337,6 +367,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Warrior Pack Bundle 1/Ninja Warrior Mecanim Animation Pack/Code/WarriorAnimationDemo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="49" lean-forward="false" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3026">
+          <caret line="178" column="35" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/MyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="30" lean-forward="false" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Warrior Pack Bundle 1/Ninja Warrior Mecanim Animation Pack/Code/WarriorAnimationDemo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3026">
+          <caret line="178" column="35" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/MyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="67" lean-forward="false" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Warrior Pack Bundle 1/Ninja Warrior Mecanim Animation Pack/Code/WarriorAnimationDemo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
@@ -410,8 +488,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/MyController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="63" column="67" lean-forward="false" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
+        <state relative-caret-position="1338">
+          <caret line="138" column="30" lean-forward="false" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/YandexDisc/OSPanel/domains/kz/helpers/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="55" />
           <folding />
         </state>
       </provider>
